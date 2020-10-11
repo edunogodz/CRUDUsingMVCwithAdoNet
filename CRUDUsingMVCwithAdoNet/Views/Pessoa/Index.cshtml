@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<CRUDUsingMVCwithAdoNet.Models.Pessoa>
 
 @{
-    ViewBag.Title = "Index";    
+    ViewBag.Title = "Index";  
 }
 
 <h2>Index</h2>
@@ -37,17 +37,14 @@
             </td>
             <td>
                 @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
-                <button type="button" class="btn btn-link" data-item="@item.Id">Deletar</button>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                <button type="button" class="btn btn-link" data-item="@item.Id">Deletar</button>         
             </td>
         </tr>
     }
 
 </table>
 
-@section Scripts {
+@*@section Scripts {
     <script type="text/javascript">
         $(document).ready(function () {
             $(".btn-link").click(function () {
@@ -66,9 +63,9 @@
                                     "   <td>" + pessoa.Cidade + "</td>" +
                                     "   <td>" +
                                     "       <a href='/Pessoa/Edit/" + pessoa.Id + "'>Editar</a> |" +
-                                    "       <button type="button" class="btn btn-link" data-item="" + pessoa.Id + "">Deletar</button>" +
+                                    "       <button type="button" class="btn btn - link" data-item="" + pessoa.Id + "">Deletar</button>" +
                                     "   </td>" +
-                                    "</tr>"
+                                "</tr>"
                                 );
                             });
                         },
@@ -80,4 +77,4 @@
             });
         });
     </script>
-}
+}*@
